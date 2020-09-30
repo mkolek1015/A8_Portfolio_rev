@@ -9,8 +9,17 @@ body {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
 .header {
-    padding: 20px;
+    padding: 0px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #258cc0;
     color: #ffffff;
@@ -49,20 +58,13 @@ a {
 
 p {
     font-size: 16px;
-}
-
-.hero {
-    height: 800px;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("../images/digital-marketing-meeting.jpg");
-    background-size: cover;
-    background-position: center;
+    float: left;
+    margin-left: auto;
 }
 
 .float-left {
     float: left;
-    margin-right: 25px;
+    margin-right: 10px;
 }
 
 .float-right {
@@ -87,47 +89,27 @@ p {
     background-color: #0072bb;
 }
 
-.benefits-breakdown {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
-
-.benefits-breakdown h3 {
-    margin-bottom: 10px;
-    text-align: center;
-}
-
-.benefits-breakdown img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
-}
-
-.benefits-paragraph {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: #0072bb;
-    color: #ffffff
-}
-
-.benefits-paragraph img {
-    max-height: 200px;
-}
-
-.benefits-paragraph h2 {
-    margin-bottom: 20px;
-    font-size: 36px;
-}
-
 .footer {
-    padding: 30px;
-    clear: both;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* set text properties */
+    background-color: #666;
+  
+      /* sets height of footer*/
+    height: 10%;
+    
+      /* sets properties for footer border*/
+    border-top: solid;
+    border-top-color: #b6d7e2;  
+    border-top-width: 8px;
+    }
+  
+.footer-text, .header-text {
+      /* forces text across the entire screen so it has a center */
+    width: 100%;
     text-align: center;
-}
+    
+    font-size: 10px;
+    color:#b6d7e2; 
+    }
 
-.footer h2 {
-    font-size: 20px;
-}
+
+    

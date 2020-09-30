@@ -9,8 +9,8 @@
   <title>Michael Kolek Contact</title>
 ​
  
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-​
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src='./script.js'></script>
 </head>
 ​
 <body>
@@ -27,13 +27,13 @@
           <a class="nav-link" href="./index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./A2_RP_About me.html">About</a>
+          <a class="nav-link" href="./A8_RP_About me.html">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./A2_Responsive Portfolio.html">Portfolio</a>
+          <a class="nav-link" href="./A8_Responsive Portfolio.html">Portfolio</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="./A2_RP_Contact.html">Contact</a>
+          <a class="nav-link" href="./A8_RP_Contact.html">Contact</a>
         </li>
       </ul>
     </div>
@@ -85,28 +85,32 @@
           <h3>Contact Form</h3>
           
           <div class="container">
-            <form action="/action_page.php">
-              <label for="fname">First Name</label>
-              <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          
-              <label for="lname">Last Name</label>
-              <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          
-              <label for="country">Country</label>
-              <select id="country" name="country">
-                <option value="australia">Australia</option>
-                <option value="canada">Canada</option>
-                <option value="usa">USA</option>
-              </select>
-              
-              <label for="lname">Email Address</label>
-              <input type="text" id="lname" name="lastname" placeholder="Email Address..">
-
-              <label for="subject">Subject</label>
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-          
-              <input type="submit" value="Submit">
-            </form>
+            <div>
+        
+              <!--Add few elements to the form-->
+      
+              <div>
+                  <input type="text" id="txtName" placeholder="Enter your name" />
+              </div>
+              <div>
+                  <input type="text" id="txtEmail" placeholder="Enter your email address" />
+              </div>
+              <div>
+                  <select id="selCountry">
+                      <option selected value="">-- Choose the country --</option>
+                      <option value="Canada">Canada</option>
+                      <option value="Ireland">Ireland</option>
+                      <option value="USA">USA</option>
+                  </select>
+              </div>
+              <div>
+                  <textarea id="msg" name="msg" placeholder="Write some message ..." style="height:100px"></textarea>
+              </div>
+              <div>
+                  <input type="button" id="bt" value="Save data to file" onclick="saveFile()" />
+              </div>
+      
+          </div>
           </div>
 ​
   <!-- jQuery CDN -->
